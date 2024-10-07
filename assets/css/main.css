@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --dark-blue : #13183F;
+    --dark-blue-hover : #666CA3;
+    --light-grey : #83869A;
+    --gradient-pink : linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --gradient-pink-hover : linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    --gradient-purple : linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    --gradient-purple-hover : linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    --pink : #F74780;
+    --pink-hover : #FFA7C3;
+    --white : #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F1FF;
+    padding-top: 32px;
+    font-family: Plus Jakarta Sans;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-call-to-action {
+    color: var(--white);
+    border-radius: 32px;
+    border: 0px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.blue-btn {
+    background-color: var(--dark-blue);
+}
+
+.blue-btn:hover{
+    background-color: var(--dark-blue-hover);
+    transform: translateY(-4px);
+}
+
+.description-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 64px 0px;
+}
+
+.description-text,
+.description-img {
+    width: 50%;
+}
+
+
+.description-text h1 {
+    color: var(--dark-blue);
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.description-text p {
+    color: var(--light-grey);
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 32px;
+}
+
+.pink-btn {
+    margin-top: 16px;
+    background: var(--gradient-pink);
+}
+
+.pink-btn:hover {
+    background: var(--gradient-pink-hover);
+}
+
+.description-img {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-right: 64px;
+}
+
+.bubble {
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+.bubble:hover {
+    transform: translateY(-4px);
+}
+
+.number-members {
+    top: 120px;
+    right: -64px;
+}
+
+.course-hours {
+    bottom: 88px;
+    right: 264px;
+}
+
+.bubble-name {
+    color: var(--light-grey);
+    margin: 4px;
+}
+
+.bubble-numbers {
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 800;
+    margin: 4px;
+}
+
+.background-image {
+    z-index: -1;
+    position: absolute;
+    top: -170px;
+    right: -220px;
+}
+
+.skilled-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.card-skill {
+    position: relative;
+    background-color: var(--white);
+    width: 32%;
+    height: 350px;
+    padding: 32px;
+    margin: 8px;
+    border-radius: 16px;
+    box-shadow: 0px 25px 50px 0px #06168D0B;
+    transition: all 0.4s;
+}
+
+.card-skill:hover {
+    transform: translateY(-4px);
+}
+
+.card-skill h3 {
+    font-size: 32px;
+}
+
+.card-skill p {
+    color: var(--light-grey);
+    font-size: 20px;
+}
+
+.card-skill a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--pink);
+    text-decoration: none;
+    position: absolute;
+    bottom: 40px;
+}
+
+.card-skill a:hover {
+    color: var(--pink-hover);
+}
+
+.first-card{
+    background: var(--gradient-pink-hover);
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--dark-blue);
+}
+
+footer div {
+    width: 80%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-purple {
+    background: var(--gradient-purple);
+}
+
+.btn-purple:hover {
+    background: var(--gradient-purple-hover);
+    transform: translateY(-4px);
+}
